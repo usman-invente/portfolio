@@ -1,0 +1,137 @@
+/* Custom CSS for top bar */
+.top_bar {
+    background-color: #252f2d;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.top_contact_info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.top_contact_info a:hover {
+    color: #f5c729 !important;
+    transition: all 0.3s ease;
+}
+
+/* Reviews Section Styles */
+.reviews_section {
+    width: 100%;
+    float: left;
+    padding: 90px 0px;
+    background-color: #f9f9f9;
+}
+
+.reviews_taital {
+    width: 100%;
+    float: left;
+    font-size: 40px;
+    color: #f5c729;
+    font-weight: bold;
+    text-align: center;
+}
+
+.reviews_taital_1 {
+    color: #292929;
+    border-bottom: 5px solid #363636;
+}
+
+.reviews_text {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #343534;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.reviews_section_2 {
+    width: 100%;
+    float: left;
+    padding-top: 30px;
+}
+
+.review_box {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+    height: 100%;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.review_box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.15);
+}
+
+.quote_icon {
+    font-size: 30px;
+    color: #f5c729;
+    margin-bottom: 15px;
+}
+
+.review_text {
+    font-size: 16px;
+    color: #666666;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.client_info {
+    margin-top: 20px;
+    border-top: 1px solid #eeeeee;
+    padding-top: 20px;
+}
+
+.client_name {
+    font-size: 18px;
+    color: #252f2d;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.client_position {
+    font-size: 14px;
+    color: #f5c729;
+    margin-bottom: 0;
+}
+
+/* Responsive styles */
+@media (max-width: 767px) {
+    .top_bar {
+        padding: 5px 0;
+    }
+    
+    .top_contact_info {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    
+    .top_contact_info > div {
+        margin-bottom: 5px;
+        margin-left: 0 !important;
+    }
+    
+    .review_box {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .top_contact_info {
+        align-items: center;
+    }
+    
+    .reviews_taital {
+        font-size: 32px;
+    }
+    
+    .review_box {
+        padding: 20px;
+    }
+}
