@@ -16,6 +16,111 @@
     transition: all 0.3s ease;
 }
 
+/* Freelance Profiles Section Styles */
+.freelance_profiles_section {
+    width: 100%;
+    float: left;
+    padding: 90px 0px;
+    background-color: #252f2d;
+}
+
+.freelance_taital {
+    width: 100%;
+    float: left;
+    font-size: 40px;
+    color: #f5c729;
+    font-weight: bold;
+    text-align: center;
+}
+
+.freelance_taital_1 {
+    color: #fefefd;
+    border-bottom: 5px solid #f5c729;
+}
+
+.freelance_text {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #fefefd;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.freelance_section_2 {
+    width: 100%;
+    float: left;
+    padding-top: 30px;
+}
+
+.platform_box {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.platform_box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.2);
+}
+
+.upwork_box {
+    border-top: 5px solid #6FDA44;
+}
+
+.fiverr_box {
+    border-top: 5px solid #1DBF73;
+}
+
+.platform_icon {
+    margin-bottom: 20px;
+}
+
+.platform_img {
+    width: 80px;
+    height: auto;
+}
+
+.platform_name {
+    font-size: 24px;
+    font-weight: 600;
+    color: #252f2d;
+    margin-bottom: 15px;
+}
+
+.platform_text {
+    font-size: 15px;
+    color: #666666;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.platform_link a {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #f5c729;
+    color: #252f2d;
+    font-weight: 600;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.upwork_box .platform_link a:hover {
+    background-color: #6FDA44;
+    color: #ffffff;
+}
+
+.fiverr_box .platform_link a:hover {
+    background-color: #1DBF73;
+    color: #ffffff;
+}
+
 /* Reviews Section Styles */
 .reviews_section {
     width: 100%;
@@ -54,19 +159,25 @@
     padding-top: 30px;
 }
 
-.review_box {
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
-    height: 100%;
-    position: relative;
-    transition: all 0.3s ease;
+/* Review Carousel Styles */
+#reviewsCarousel {
+    padding-bottom: 60px;
 }
 
-.review_box:hover {
-    transform: translateY(-10px);
-    box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.15);
+#reviewsCarousel .carousel-inner {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.review_box {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+    min-height: 300px;
+    position: relative;
+    transition: all 0.3s ease;
+    margin: 0 auto;
 }
 
 .quote_icon {
@@ -99,6 +210,165 @@
     font-size: 14px;
     color: #f5c729;
     margin-bottom: 0;
+}
+
+/* Carousel Controls */
+.reviews-indicators {
+    bottom: 0;
+}
+
+.reviews-indicators li {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #cccccc;
+    border: none;
+    margin: 0 5px;
+}
+
+.reviews-indicators li.active {
+    background-color: #f5c729;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 50px;
+    height: 50px;
+    background-color: #252f2d;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.8;
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+    opacity: 1;
+    background-color: #f5c729;
+}
+
+.reviews-control {
+    width: 20px;
+    height: 20px;
+}
+
+/* Carousel Animation */
+.carousel-item {
+    opacity: 0;
+    transition: opacity 0.7s ease !important;
+    position: absolute;
+    display: block !important;
+    width: 100%;
+}
+
+.carousel-item.active {
+    opacity: 1;
+    position: relative;
+}
+
+/* Responsive styles */
+@media (max-width: 991px) {
+    .review_box {
+        padding: 30px;
+    }
+    
+    #reviewsCarousel .carousel-inner {
+        max-width: 90%;
+    }
+    
+    .carousel-control-prev {
+        left: 0;
+    }
+    
+    .carousel-control-next {
+        right: 0;
+    }
+    
+    .freelance_taital {
+        font-size: 36px;
+    }
+    
+    .platform_box {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .top_bar {
+        padding: 5px 0;
+    }
+    
+    .top_contact_info {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    
+    .top_contact_info > div {
+        margin-bottom: 5px;
+        margin-left: 0 !important;
+    }
+    
+    .review_box {
+        padding: 25px;
+        min-height: auto;
+    }
+    
+    .reviews_taital, .freelance_taital {
+        font-size: 32px;
+    }
+    
+    .carousel-control-prev, .carousel-control-next {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .platform_box {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .top_contact_info {
+        align-items: center;
+    }
+    
+    .review_box {
+        padding: 20px;
+    }
+    
+    .quote_icon {
+        font-size: 24px;
+    }
+    
+    .carousel-control-prev, .carousel-control-next {
+        display: none;
+    }
+    
+    .freelance_taital {
+        font-size: 28px;
+    }
+    
+    .freelance_text {
+        margin-bottom: 30px;
+    }
+    
+    .platform_box {
+        padding: 25px 15px;
+    }
+    
+    .platform_img {
+        width: 60px;
+    }
+    
+    .platform_link a {
+        padding: 10px 20px;
+    }
 }
 
 /* Responsive styles */

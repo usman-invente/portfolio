@@ -17,6 +17,7 @@
       <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
       <!-- style css -->
       <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="css/custom.css">
       <!-- Responsive-->
       <link rel="stylesheet" href="css/responsive.css">
       <!-- fevicon -->
@@ -31,21 +32,35 @@
       <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
    </head>
    <body>
+ <!-- top bar section start -->
+      <div class="top_bar">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="top_contact_info" style="display: flex; justify-content: flex-end;">
+                     <div style="margin-left: 30px; display: flex; align-items: center;">
+                        <i class="fa fa-envelope" aria-hidden="true" style="color: #f5c729; margin-right: 10px; font-size: 16px;"></i>
+                        <a href="mailto:usman.codenest@gmail.com" style="color: #fefefd; text-decoration: none; font-size: 14px;">usman.codenest@gmail.com</a>
+                     </div>
+                     <div style="margin-left: 30px; display: flex; align-items: center;">
+                        <div style="background-color: #25D366; width: 24px; height: 24px; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-right: 10px;">
+                           <i class="fab fa-whatsapp" aria-hidden="true" style="color: white; font-size: 16px;"></i>
+                        </div>
+                        <a href="https://wa.me/923262530094" style="color: #fefefd; text-decoration: none; font-size: 14px;">+923262530094</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- top bar section end -->
+      
       <!-- header section start -->
-      <div class="header_section header_bg">
+       <div class="header_section header_bg">
          <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                <div class="logo"><a href="index.html"><img src="images/logo.png"></a></div>
-               <div class="contact-info d-none d-lg-flex mr-auto" style="color: #fefefd; margin-left: 20px;">
-                  <div style="margin-right: 20px;">
-                     <i class="fa fa-envelope" aria-hidden="true" style="color: #f5c729; margin-right: 5px;"></i>
-                     <a href="mailto:usman.codenest@gmail.com" style="color: #fefefd; text-decoration: none;">usman.codenest@gmail.com</a>
-                  </div>
-                  <div>
-                     <i class="fa fa-whatsapp" aria-hidden="true" style="color: #f5c729; margin-right: 5px;"></i>
-                     <a href="https://wa.me/923262530094" style="color: #fefefd; text-decoration: none;">+923262530094</a>
-                  </div>
-               </div>
+               
                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
                </button>
@@ -63,9 +78,7 @@
                      <li class="nav-item">
                         <a class="nav-link" href="service.html">Service</a>
                      </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="blog.html">Blog</a>
-                     </li>
+                   
                      <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact Us</a>
                      </li>
